@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.lenovo.ormlite_database.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="registration form"
+        android:textColor="#000000"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="step 1"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:padding="20dp"
+        >
+        <EditText
+            android:id="@+id/et_name_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            tools:ignore="LabelFor"
+            android:hint="user name"
+            />
+        <EditText
+            android:id="@+id/et_email_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor"
+            android:hint="email"
+            />
+        <EditText
+            android:id="@+id/et_mbl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            tools:ignore="LabelFor"
+            android:maxLength="10"
+            android:hint="mobile"
+            />
+        <EditText
+            android:id="@+id/et_pwd_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            tools:ignore="LabelFor"
+            android:hint="password"
+            />
+        <EditText
+            android:id="@+id/et_cfm_pwd_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:hint="confirm password"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="end"
+        android:padding="20dp"
+        >
+        <!--<LinearLayout-->
+        <!--android:id="@+id/btn_pre_main"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:clickable="true"-->
+        <!--android:background="@drawable/btn_bg">-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_chevron_left_black_36dp"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="previous"-->
+        <!--android:textSize="25dp"-->
+        <!--android:gravity="start"-->
+        <!--android:textColor="#000000"/>-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/btn_adv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_bg"
+            android:clickable="true"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="advance"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_chevron_right_black_36dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
